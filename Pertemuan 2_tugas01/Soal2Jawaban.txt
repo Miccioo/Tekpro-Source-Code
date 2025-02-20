@@ -1,0 +1,30 @@
+public class Constants {
+    public static void main(String[] args){ 
+        final double CM_PER_INCH = 2.54;
+        double paperWidth = 8.5;
+        double paperHeight = 11;
+        System.out.println("Paper size in centimeters: " +
+        paperWidth * CM_PER_INCH + " by " + paperHeight *
+        CM_PER_INCH);
+    }
+}
+
+public class Constants2 {
+    public static final double CM_PER_INCH = 2.54;
+    public static void main(String[] args) {
+        double paperWidth = 8.5;
+        double paperHeight = 11;
+        System.out.println("Paper size in centimeters: " + paperWidth*CM_PER_INCH + " by " + paperHeight * CM_PER_INCH);
+    }
+}
+
+Soal
+1. Bagaimana output dari masing-masing class Constants dan Constants2
+2. Apa perbedaan penggunaan final double dengan public static final double
+
+Jawaban :
+1. output dari kedua file tersebut sama yaitu "Paper size in centimeters: 21.59 by 27.94"
+2. perbedaan final double dan public static final double adalah final double bisa dibilang 
+   kita menggunakan variabel lokal, jadi variabel tersebut tidak dapat digunakan
+   di method yang lain tetapi jika kita menggunakan public static final double, variabel 
+   tersebut berubah menjadi variabel global yang dapat di gunakan di method lainnya

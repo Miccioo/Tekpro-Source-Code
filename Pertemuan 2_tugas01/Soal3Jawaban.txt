@@ -1,0 +1,23 @@
+public class Soal3 {
+    public static void main(String[] args) {
+        double x = 92.98;
+        int nx = (int) Math.round(x);
+        System.out.println("Hasil pembulatan: " + nx);
+    }
+}
+
+Soal3 
+1. Pada kasus berikut jelaskan nilai nx setelah digunakan Math.round(x);
+2. Kenapa dibutuhkan cast (int) dalam penggunaan Math.round(x) ?
+
+Jawaban:
+1. Nilai nx setelah digunakan Math.round(x) menjadi "93", hal ini disebabkan 
+   karena (int) Math.round(x) sebenarnya menambahkan nilai 0.5 ke parameter (x)
+   dan akan di return nilai dasar dari angka tersebut sehingga 92,98 + 0,5 = 93,48.
+   Sehingga 93,48 = 93
+   
+2. Karena penggunaan Math.round(x) akan mengubah tipe data variabel yang digunakan, 
+   seperti yang terlihat pada source code Soal3, variabel x yang bertipe data double 
+   akan di konversi menjadi long jika di gunakan Math.round(x), jika variabel x bertipe 
+   data float, maka akan dikonversi menjadi tipe data intJadi cast (int) digunakan 
+   untuk mengubah tipe data yang awalnya long menjadi integer.

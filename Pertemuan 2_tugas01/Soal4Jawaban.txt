@@ -1,0 +1,28 @@
+public class Soal4 {
+    static short methodOne(long l) {
+        int i = (int) l;
+        return (short)i;
+    }
+    public static void main(String[] args) {
+        double d = 10.25;
+        float f = (float) d;
+        byte b = (byte) methodOne((long) f);
+        System.out.println(b);
+    }
+}
+
+Soal4
+1. Jelaskan output nilai dari variable b. 
+2. Jelaskan apa yang berubah dari variable d menjadi variable b setelah dilakukan cast?
+
+Jawaban:
+
+1. Output yang keluar adalah 10, pertama nilai dari d di assign 10.25 lalu kita masukkan 
+   nilai d tersebut ke variabel f dengan tipe data float yang berarti masih sama yaitu 10.25
+   lalu kita gunakan methodOne((long) f), ini akan mempassing parameter nilai dari f ke 
+   variabel l dengan tipe data integer, ini akan mengubah nilai yang awalnya 10.25 menjadi 10
+   jadi variabel i akan dimasukkan nilai konversi yang awalnya 10.25 menjadi 10. Lalu method 
+   tersebut akan mereturn i dengan tipe data short, yang akhirnya variabel byte dengan tipe 
+   data byte di assign nilai dari variabel i yaitu 10.
+
+2. Tipe data yang awalnya double menjadi byte setelah dilakukan cast  
